@@ -1393,6 +1393,7 @@ static NSOperationQueue *sharedQueue = nil;
     if (CFReadStreamSetClient((CFReadStreamRef)[self readStream], kNetworkEvents, ReadStreamClientCallBack, &ctxt)) {
 		if (CFReadStreamOpen((CFReadStreamRef)[self readStream])) {
 			streamSuccessfullyOpened = YES;
+            NSLog(@"------streamSuccessfullyOpened = YES;");
 		}
 	}
 	
@@ -3199,6 +3200,7 @@ static NSOperationQueue *sharedQueue = nil;
             break;
             
         case kCFStreamEventErrorOccurred:
+            NSLog(@"-----case kCFStreamEventErrorOccurred:");
             [self handleStreamError];
             break;
             
@@ -3295,6 +3297,7 @@ static NSOperationQueue *sharedQueue = nil;
 
     // Less than zero is an error
     if (bytesRead < 0) {
+        NSLog(@"---------bytesRead < 0");
         [self handleStreamError];
 		
 	// If zero bytes were read, wait for the EOF to come.
@@ -3715,6 +3718,7 @@ static NSOperationQueue *sharedQueue = nil;
 		// Reset the timeout
 		[self setLastActivityTime:[NSDate date]];
 		CFStreamClientContext ctxt = {0, self, NULL, NULL, NULL};
+        NSLog(@"-----scheduleReadStream");
 		CFReadStreamSetClient((CFReadStreamRef)[self readStream], kNetworkEvents, ReadStreamClientCallBack, &ctxt);
 		[[self readStream] scheduleInRunLoop:[NSRunLoop currentRunLoop] forMode:[self runLoopMode]];
 		[self setReadStreamIsScheduled:YES];
@@ -3736,7 +3740,7 @@ static NSOperationQueue *sharedQueue = nil;
 			[[self class] performSelectorOnMainThread:@selector(hideNetworkActivityIndicatorAfterDelay) withObject:nil waitUntilDone:[NSThread isMainThread]];
 		}
 		[connectionsLock unlock];
-
+        NSLog(@"-----unscheduleReadStream");
 		CFReadStreamSetClient((CFReadStreamRef)[self readStream], kCFStreamEventNone, NULL, NULL);
 		[[self readStream] removeFromRunLoop:[NSRunLoop currentRunLoop] forMode:[self runLoopMode]];
 		[self setReadStreamIsScheduled:NO];

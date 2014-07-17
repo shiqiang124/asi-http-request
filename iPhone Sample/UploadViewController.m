@@ -6,6 +6,146 @@
 //  Copyright 2008 All-Seeing Interactive. All rights reserved.
 //
 
+/*
+ 2014-07-18 11:06:03.943 ASIHTTPRequest iPhone[155:907] Application windows are expected to have a root view controller at the end of application launch
+ 2014-07-18 11:06:06.368 ASIHTTPRequest iPhone[155:907] [STATUS] Starting asynchronous request <ASIFormDataRequest: 0x8f3200>
+ 2014-07-18 11:06:06.568 ASIHTTPRequest iPhone[155:3d07] [CONNECTION] Request #1 will use connection #1
+ 2014-07-18 11:06:06.571 ASIHTTPRequest iPhone[155:3d07] -----scheduleReadStream
+ 2014-07-18 11:06:06.605 ASIHTTPRequest iPhone[155:3d07] ------streamSuccessfullyOpened = YES;
+ 2014-07-18 11:06:06.892 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 163840 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:06:08.142 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 580544 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:06:09.392 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 684800 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:06:10.642 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 756664 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:06:11.893 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 699155 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:06:11.899 ASIHTTPRequest iPhone[155:3d07] [STATUS] Request <ASIFormDataRequest: 0x8f3200> finished uploading data
+ 2014-07-18 11:06:12.559 ASIHTTPRequest iPhone[155:3d07] [STATUS] Request <ASIFormDataRequest: 0x8f3200> received response headers
+ 2014-07-18 11:06:12.563 ASIHTTPRequest iPhone[155:3d07] [CONNECTION] Got no keep-alive header, will keep this connection open for 60.000000 seconds
+ 2014-07-18 11:06:12.567 ASIHTTPRequest iPhone[155:3d07] [STATUS] Request <ASIFormDataRequest: 0x8f3200> finished downloading data (270 bytes)
+ 2014-07-18 11:06:12.573 ASIHTTPRequest iPhone[155:3d07] [CONNECTION] Request #1 finished using connection #1
+ 2014-07-18 11:06:12.576 ASIHTTPRequest iPhone[155:3d07] -----unscheduleReadStream
+ 2014-07-18 11:06:12.577 ASIHTTPRequest iPhone[155:3d07] [STATUS] Request finished: <ASIFormDataRequest: 0x8f3200>
+ 2014-07-18 11:06:12.589 ASIHTTPRequest iPhone[155:907] ====================response:999==========================
+ 2014-07-18 11:06:17.141 ASIHTTPRequest iPhone[155:907] [STATUS] Starting asynchronous request <ASIFormDataRequest: 0x8fd400>
+ 2014-07-18 11:06:17.281 ASIHTTPRequest iPhone[155:3d07] [CONNECTION] Request #2 will use connection #1
+ 2014-07-18 11:06:17.284 ASIHTTPRequest iPhone[155:3d07] -----scheduleReadStream
+ 2014-07-18 11:06:17.288 ASIHTTPRequest iPhone[155:3d07] ------streamSuccessfullyOpened = YES;
+ 2014-07-18 11:06:17.553 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 302041 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:06:18.556 ASIHTTPRequest iPhone[155:3d07] [STATUS] Request <ASIFormDataRequest: 0x8fd400> finished uploading data
+ 2014-07-18 11:06:18.803 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 2662486 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:06:19.728 ASIHTTPRequest iPhone[155:3d07] [STATUS] Request <ASIFormDataRequest: 0x8fd400> received response headers
+ 2014-07-18 11:06:19.735 ASIHTTPRequest iPhone[155:3d07] [CONNECTION] Got no keep-alive header, will keep this connection open for 60.000000 seconds
+ 2014-07-18 11:06:19.738 ASIHTTPRequest iPhone[155:3d07] [STATUS] Request <ASIFormDataRequest: 0x8fd400> finished downloading data (271 bytes)
+ 2014-07-18 11:06:19.750 ASIHTTPRequest iPhone[155:3d07] [CONNECTION] Request #2 finished using connection #1
+ 2014-07-18 11:06:19.755 ASIHTTPRequest iPhone[155:3d07] -----unscheduleReadStream
+ 2014-07-18 11:06:19.758 ASIHTTPRequest iPhone[155:3d07] [STATUS] Request finished: <ASIFormDataRequest: 0x8fd400>
+ 2014-07-18 11:06:19.766 ASIHTTPRequest iPhone[155:907] ====================response:999==========================
+ 2014-07-18 11:06:27.177 ASIHTTPRequest iPhone[155:907] [STATUS] Starting asynchronous request <ASIFormDataRequest: 0x8a2800>
+ 2014-07-18 11:06:27.336 ASIHTTPRequest iPhone[155:3d07] [CONNECTION] Request #3 will use connection #1
+ 2014-07-18 11:06:27.338 ASIHTTPRequest iPhone[155:3d07] -----scheduleReadStream
+ 2014-07-18 11:06:27.342 ASIHTTPRequest iPhone[155:3d07] ------streamSuccessfullyOpened = YES;
+ 2014-07-18 11:06:27.368 ASIHTTPRequest iPhone[155:3d07] -----case kCFStreamEventErrorOccurred:
+ 2014-07-18 11:06:27.371 ASIHTTPRequest iPhone[155:3d07] -----unscheduleReadStream
+ 2014-07-18 11:06:27.372 ASIHTTPRequest iPhone[155:3d07] [CONNECTION] Request attempted to use connection #1, but it has been closed - will retry with a new connection
+ 2014-07-18 11:06:27.376 ASIHTTPRequest iPhone[155:3d07] [CONNECTION] Request #3 will use connection #2
+ 2014-07-18 11:06:27.377 ASIHTTPRequest iPhone[155:3d07] -----scheduleReadStream
+ 2014-07-18 11:06:27.406 ASIHTTPRequest iPhone[155:3d07] ------streamSuccessfullyOpened = YES;
+ 2014-07-18 11:06:27.410 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 33039 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:06:28.661 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 944960 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:06:29.911 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 978584 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:06:31.162 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 692952 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:06:31.411 ASIHTTPRequest iPhone[155:3d07] [STATUS] Request <ASIFormDataRequest: 0x8a2800> finished uploading data
+ 2014-07-18 11:06:32.115 ASIHTTPRequest iPhone[155:3d07] [STATUS] Request <ASIFormDataRequest: 0x8a2800> received response headers
+ 2014-07-18 11:06:32.119 ASIHTTPRequest iPhone[155:3d07] [CONNECTION] Got no keep-alive header, will keep this connection open for 60.000000 seconds
+ 2014-07-18 11:06:32.123 ASIHTTPRequest iPhone[155:3d07] [STATUS] Request <ASIFormDataRequest: 0x8a2800> finished downloading data (270 bytes)
+ 2014-07-18 11:06:32.128 ASIHTTPRequest iPhone[155:3d07] [CONNECTION] Request #3 finished using connection #2
+ 2014-07-18 11:06:32.131 ASIHTTPRequest iPhone[155:3d07] -----unscheduleReadStream
+ 2014-07-18 11:06:32.133 ASIHTTPRequest iPhone[155:3d07] [STATUS] Request finished: <ASIFormDataRequest: 0x8a2800>
+ 2014-07-18 11:06:32.139 ASIHTTPRequest iPhone[155:907] ====================response:999==========================
+ 2014-07-18 11:06:45.669 ASIHTTPRequest iPhone[155:907] [STATUS] Starting asynchronous request <ASIFormDataRequest: 0x8fd400>
+ 2014-07-18 11:06:45.853 ASIHTTPRequest iPhone[155:3d07] [CONNECTION] Request #4 will use connection #2
+ 2014-07-18 11:06:45.856 ASIHTTPRequest iPhone[155:3d07] -----scheduleReadStream
+ 2014-07-18 11:06:45.860 ASIHTTPRequest iPhone[155:3d07] ------streamSuccessfullyOpened = YES;
+ 2014-07-18 11:06:46.127 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 439476 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:06:47.376 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 130619 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:06:48.626 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:06:49.877 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:06:51.127 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:06:52.377 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:06:53.627 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:06:54.877 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:06:56.127 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:06:57.377 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:06:58.627 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:06:59.877 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:07:01.127 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:07:02.377 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:07:03.627 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:07:04.877 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:07:06.127 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:07:07.377 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:07:08.627 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:07:09.877 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:07:11.127 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:07:12.377 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:07:13.627 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:07:14.877 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:07:16.127 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:07:17.377 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:07:18.627 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:07:19.877 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:07:21.127 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:07:22.377 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:07:23.627 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:07:24.877 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:07:26.127 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:07:27.377 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:07:28.626 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:07:29.877 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:07:31.127 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:07:32.377 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:07:33.627 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:07:34.877 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:07:36.127 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:07:37.377 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:07:38.627 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:07:39.877 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:07:41.127 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:07:42.377 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:07:43.627 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:07:44.877 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:07:46.127 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:07:47.377 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:07:48.627 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:07:49.877 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:07:51.127 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:07:52.377 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:07:53.627 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:07:54.877 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:07:56.127 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:07:57.377 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:07:58.626 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:07:59.877 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:08:01.127 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:08:02.377 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:08:03.627 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:08:04.877 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:08:06.126 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:08:07.377 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:08:08.627 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:08:09.877 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:08:11.127 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:08:12.377 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:08:13.627 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:08:14.877 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:08:16.127 ASIHTTPRequest iPhone[155:3d07] [THROTTLING] ===Used: 0 bytes of bandwidth in last measurement period===
+ 2014-07-18 11:08:16.132 ASIHTTPRequest iPhone[155:3d07] [STATUS] Request <ASIFormDataRequest: 0x8fd400>: Failed
+ 2014-07-18 11:08:16.134 ASIHTTPRequest iPhone[155:3d07] [CONNECTION] Request #4 failed and will invalidate connection #2
+ 2014-07-18 11:08:16.137 ASIHTTPRequest iPhone[155:3d07] -----unscheduleReadStream
+
+ 
+ 
+ */
+
 #import "UploadViewController.h"
 #import "ASIFormDataRequest.h"
 #import "InfoCell.h"
@@ -20,13 +160,25 @@
 
 - (IBAction)performLargeUpload:(id)sender
 {
-	[request cancel];
-	[self setRequest:[ASIFormDataRequest requestWithURL:[NSURL URLWithString:@"http://allseeing-i.com/ignore"]]];
-	[request setPostValue:@"test" forKey:@"value1"];
-	[request setPostValue:@"test" forKey:@"value2"];
-	[request setPostValue:@"test" forKey:@"value3"];
-	[request setTimeOutSeconds:20];
+	//[request cancel];
+	[self setRequest:[ASIFormDataRequest requestWithURL:[NSURL URLWithString:@"http://upload.photo.163.com/anony/web/upload/userdefinesize?sitefrom=test&responsetype=json&saveorigin=false&userdefinesize=164x164x1x90;"]]];
+	//[request setPostValue:@"test" forKey:@"value1"];
+	//[request setPostValue:@"test" forKey:@"value2"];
+	//[request setPostValue:@"test" forKey:@"value3"];
+	[request setTimeOutSeconds:60];
+    
+    [request setShouldAttemptPersistentConnection:YES];
+    [request setPersistentConnectionTimeoutSeconds:60];
+    
+    [request setShouldContinueWhenAppEntersBackground:YES];
 
+    [request setPostFormat:ASIMultipartFormDataPostFormat];
+    
+    NSString *pathToImage = [[NSBundle mainBundle] pathForResource:@"2" ofType:@"t"];
+    NSData *imageData = [NSData dataWithContentsOfFile:pathToImage];
+    
+    [request addData:imageData forKey:@"Filedata"];
+    
 	#if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_4_0
 	[request setShouldContinueWhenAppEntersBackground:YES];
 	#endif
@@ -35,6 +187,8 @@
 	[request setDidFailSelector:@selector(uploadFailed:)];
 	[request setDidFinishSelector:@selector(uploadFinished:)];
 	
+    
+    /*
 	//Create a 256KB file
 	NSData *data = [[[NSMutableData alloc] initWithLength:256*1024] autorelease];
 	NSString *path = [[NSHomeDirectory() stringByAppendingPathComponent:@"Documents"] stringByAppendingPathComponent:@"file"];
@@ -45,6 +199,7 @@
 	for (i=0; i<8; i++) {
 		[request setFile:path forKey:[NSString stringWithFormat:@"file-%i",i]];
 	}
+     */
 	
 	[request startAsynchronous];
 	[resultView setText:@"Uploading data..."];
@@ -64,6 +219,10 @@
 {
 	[resultView setText:[NSString stringWithFormat:@"Finished uploading %llu bytes of data",[theRequest postLength]]];
 
+    
+    NSDictionary *result = [NSJSONSerialization JSONObjectWithData:[theRequest responseData] options:NSJSONReadingMutableContainers error:nil];
+    
+    NSLog(@"====================response:%@==========================", [result objectForKey:@"resultcode"]);
 	#if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_4_0
     // Clear out the old notification before scheduling a new one.
     if ([[[UIApplication sharedApplication] scheduledLocalNotifications] count] > 0)

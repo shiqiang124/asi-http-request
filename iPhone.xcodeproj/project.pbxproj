@@ -110,6 +110,8 @@
 		B5FE752711DBBA6400F898C8 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B5FE752511DBBA6400F898C8 /* ASIDownloadCache.m */; };
 		B5FE752811DBBA6400F898C8 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B5FE752511DBBA6400F898C8 /* ASIDownloadCache.m */; };
 		B5FE752911DBBA6400F898C8 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B5FE752511DBBA6400F898C8 /* ASIDownloadCache.m */; };
+		CEE98BDE19751E8200A27620 /* 1.t in Resources */ = {isa = PBXBuildFile; fileRef = CEE98BDD19751E8200A27620 /* 1.t */; };
+		CEE98BE01977758400A27620 /* 2.t in Resources */ = {isa = PBXBuildFile; fileRef = CEE98BDF1977758400A27620 /* 2.t */; };
 		DADCEB8512D5039F00958557 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B576D4C011C7CC970059B815 /* CFNetwork.framework */; };
 		DADCEB8612D503AD00958557 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B576D4C011C7CC970059B815 /* CFNetwork.framework */; };
 		DADCEB8A12D503F500958557 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B576D4D011C7CCBC0059B815 /* CoreGraphics.framework */; };
@@ -267,6 +269,8 @@
 		B5FE752511DBBA6400F898C8 /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDownloadCache.m; sourceTree = "<group>"; };
 		B5FE752611DBBA6400F898C8 /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDownloadCache.h; sourceTree = "<group>"; };
 		B5FE752A11DBBA6A00F898C8 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
+		CEE98BDD19751E8200A27620 /* 1.t */ = {isa = PBXFileReference; lastKnownFileType = file; name = 1.t; path = "iPhone Sample/1.t"; sourceTree = "<group>"; };
+		CEE98BDF1977758400A27620 /* 2.t */ = {isa = PBXFileReference; lastKnownFileType = file; name = 2.t; path = "iPhone Sample/2.t"; sourceTree = "<group>"; };
 		DADCEB9812D5057700958557 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = /usr/lib/libxml2.dylib; sourceTree = "<absolute>"; };
 		DADCEB9E12D505AB00958557 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = /usr/lib/libz.dylib; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
@@ -379,6 +383,8 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
+				CEE98BDF1977758400A27620 /* 2.t */,
+				CEE98BDD19751E8200A27620 /* 1.t */,
 				B55B606D0F765A930064029C /* SynchronousViewController.h */,
 				B55B606A0F765A930064029C /* SynchronousViewController.m */,
 				B57AF5901258B3F1002A1F0C /* WebPageViewController.h */,
@@ -646,6 +652,8 @@
 			files = (
 				B55B60740F765A990064029C /* iphone-icon.png in Resources */,
 				B576D76611C7F4D90059B815 /* iPhoneMainWindow.xib in Resources */,
+				CEE98BDE19751E8200A27620 /* 1.t in Resources */,
+				CEE98BE01977758400A27620 /* 2.t in Resources */,
 				B523254311CA01F1006C6E5A /* Sample.xib in Resources */,
 				B50F661A1297FA45003887B1 /* strict.xcconfig in Resources */,
 			);
@@ -830,6 +838,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: WEI DONGYAN (J42GFGV673)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
@@ -842,6 +851,7 @@
 				INFOPLIST_FILE = "iPhone Sample/iPhoneInfo.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
 				PRODUCT_NAME = "ASIHTTPRequest iPhone";
+				PROVISIONING_PROFILE = "21806391-0A02-4118-9749-D512FBA4CBA6";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -853,6 +863,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: WEI DONGYAN (J42GFGV673)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -862,6 +873,7 @@
 				INFOPLIST_FILE = "iPhone Sample/iPhoneInfo.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
 				PRODUCT_NAME = "ASIHTTPRequest iPhone";
+				PROVISIONING_PROFILE = "21806391-0A02-4118-9749-D512FBA4CBA6";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
